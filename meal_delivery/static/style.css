@@ -1,0 +1,17 @@
+body {
+    background-color: #3f86ce;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, a {
+    color: #ffffff;
+    text-align: center;
+}
+
+p {
+    color: #ffffff;
+    text-align: center;
+
+}

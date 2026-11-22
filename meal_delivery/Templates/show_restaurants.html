@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <h1>Restaurants</h1>
+        <thead>
+            <tr>
+                <th>Restaurant Name</th>
+                <th>Address</th>
+                <th>Restaurant Picture</th>
+                <th>Cuisine Type</th>
+                <th>Rating </th>
+                <th>Actions</th>
+            </tr>
+        </thread>
+        <tbody>
+            {% for restaurant in restaurants %}     
+            <tr>
+                <td>{{ restaurant.restaurent_name }}</td>
+                <td>{{ restaurant.address }}</td>
+                <td><img src="{{ restaurant.restaurant_picture }}" alt="Restaurant Picture"></td>
+                <td>{{ restaurant.cuisine_type }}</td>
+                <td>{{ restaurant.rating }}</td>
+                <td> 
+                    <a href="#">Edit</a>
+                    <a href="#">Delete</a>
+                </td>
+            </tr>
+            </tbody>
+            {% endfor %}
+</body>
+</html>
